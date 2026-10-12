@@ -25,7 +25,7 @@ MultiplicativeAlgorithm = new_class("MultiplicativeAlgorithm",
                                     package = "PFIM",
 
                                     properties = list(
-                                      multiplicativeAlgorithmOutputs = new_property(class_list, default = list())
+                                      multiplicativeAlgorithmOutputs = new_property(class_list, default = quote(list()))
                                     ))
 S4_register( MultiplicativeAlgorithm )
 

@@ -1,3 +1,7 @@
+# PFIM development version
+
+* Register optional FIM property types with S4 and quote empty property defaults so PFIM installs and loads with current development S7.
+
 # PFIM 8.0
 
 PFIM 8.0 is a full rewrite of the package on the S7 object system, with C++

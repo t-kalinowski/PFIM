@@ -23,7 +23,7 @@
 
 PGBOAlgorithm = new_class( "PGBOAlgorithm", package = "PFIM",
                            properties = list(
-                             optimizerOutputs = new_property( class_list, default = list() )
+                             optimizerOutputs = new_property( class_list, default = quote(list()) )
                            ) )
 S4_register( PGBOAlgorithm )
 

@@ -36,19 +36,23 @@ Fim = new_class( "Fim", package = "PFIM",
                  properties = list(
                    fisherMatrix              = new_property(
                      class_double,
-                     default   = numeric( 0 ),
+                     default   = quote(numeric( 0 )),
                      validator = .fimValidateSquareMatrix
                    ),
-                   fixedEffects              = new_property( class_double,  default = numeric( 0 ) ),
-                   varianceEffects           = new_property( class_double,  default = numeric( 0 ) ),
-                   SEAndRSE                  = new_property( class_list,    default = list()        ),
+                   fixedEffects              = new_property( class_double,  default = quote(numeric( 0 )) ),
+                   varianceEffects           = new_property( class_double,  default = quote(numeric( 0 )) ),
+                   SEAndRSE                  = new_property( class_list,    default = quote(list())        ),
                    condNumberFixedEffects    = new_property( class_double,  default = 0.0           ),
                    condNumberVarianceEffects = new_property( class_double,  default = 0.0           ),
-                   shrinkage                 = new_property( class_double,  default = numeric( 0 )  ),
+                   shrinkage                 = new_property( class_double,  default = quote(numeric( 0 ))  ),
                    singularFim               = new_property( class_logical, default = FALSE         )
                  )
 )
 
+.registerFimUnion = function() {
+  S4_register( Fim )
+  methods::setClassUnion( "PFIM_Fim_or_NULL", c( "NULL", "PFIM::Fim" ) )
+}
 # S7 generics
 #' @name evaluateFim
 #' @return The updated \code{Fim} object after evaluation.

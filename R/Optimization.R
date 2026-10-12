@@ -30,8 +30,8 @@ Optimization = new_class( "Optimization",
                           package    = "PFIM",
                           properties = list(
                             project                      = new_property( PFIMProject ),
-                            optimisationDesign           = new_property( class_list, default = list() ),
-                            optimisationAlgorithmOutputs = new_property( class_list, default = list() )
+                            optimisationDesign           = new_property( class_list, default = quote(list()) ),
+                            optimisationAlgorithmOutputs = new_property( class_list, default = quote(list()) )
                           ),
                           constructor = function(
                               name = character(0),
@@ -90,6 +90,7 @@ Optimization = new_class( "Optimization",
                             )
                           }
 )
+.registerFimUnion()
 S4_register( Optimization )
 
 #' Default method for \code{Optimization}.

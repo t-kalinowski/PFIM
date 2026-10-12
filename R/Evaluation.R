@@ -26,7 +26,7 @@
 
 Evaluation = new_class("Evaluation", package = "PFIM", parent = PFIMProject,
                        properties = list(
-                         evaluationDesign = new_property(class_list, default = list())
+                         evaluationDesign = new_property(class_list, default = quote(list()))
                        ),
                        constructor = function(evaluationDesign = list(),
                                               name = character(0),
@@ -65,6 +65,7 @@ Evaluation = new_class("Evaluation", package = "PFIM", parent = PFIMProject,
                            evaluationDesign = evaluationDesign
                          )
                        })
+.registerFimUnion()
 S4_register( Evaluation )
 
 #' Build a default FIM instance from type label.

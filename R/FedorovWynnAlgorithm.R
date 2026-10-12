@@ -215,7 +215,7 @@ NULL
 FedorovWynnAlgorithm = new_class( "FedorovWynnAlgorithm",
                                   package    = "PFIM",
                                   properties = list(
-                                    FedorovWynnAlgorithmOutputs = new_property( class_list, default = list() )
+                                    FedorovWynnAlgorithmOutputs = new_property( class_list, default = quote(list()) )
                                   )
 )
 S4_register( FedorovWynnAlgorithm )

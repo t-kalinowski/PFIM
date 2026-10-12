@@ -21,12 +21,13 @@
     pfim_set_option( devPath = pkgRoot )
 
   # Replay S4 tables (lazy-load skips top-level S4_register side effects).
-  S4_register( Evaluation )
-  S4_register( Optimization )
-  S4_register( CovariateTest )
   S4_register( PopulationFim )
   S4_register( IndividualFim )
   S4_register( BayesianFim )
+  .registerFimUnion()
+  S4_register( Evaluation )
+  S4_register( Optimization )
+  S4_register( CovariateTest )
   S4_register( MultiplicativeAlgorithm )
   S4_register( FedorovWynnAlgorithm )
   S4_register( PSOAlgorithm )
