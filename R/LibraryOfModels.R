@@ -17,7 +17,7 @@
 LibraryOfModels = new_class("LibraryOfModels", package = "PFIM",
 
                        properties = list(
-                         models = new_property( class_list, default = quote(list()))))
+                         models = new_property( class_list, default = list())))
 
 #' Look up one named equation list from a PK or PD library.
 #' @noRd

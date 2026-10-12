@@ -13,7 +13,7 @@ AdministrationConstraints = new_class( "AdministrationConstraints",
                                        package = "PFIM",
                                        properties = list(
                                          outcome = new_property(class_character, default = quote(character(0))),
-                                         doses = new_property(class_list, default = quote(list()))
+                                         doses = new_property(class_list, default = list())
                                        ),
                                        validator = function( self ) {
                                          o = prop( self, "outcome" )

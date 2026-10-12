@@ -30,8 +30,8 @@ Optimization = new_class( "Optimization",
                           package    = "PFIM",
                           properties = list(
                             project                      = new_property( PFIMProject ),
-                            optimisationDesign           = new_property( class_list, default = quote(list()) ),
-                            optimisationAlgorithmOutputs = new_property( class_list, default = quote(list()) )
+                            optimisationDesign           = new_property( class_list, default = list() ),
+                            optimisationAlgorithmOutputs = new_property( class_list, default = list() )
                           ),
                           constructor = function(
                               name = character(0),

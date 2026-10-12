@@ -32,7 +32,7 @@ SamplingTimeConstraints = new_class( "SamplingTimeConstraints", package = "PFIM"
                                                         initialSamplings = new_property(class_vector, default = quote(numeric(0))),
                                                         fixedTimes = new_property(class_vector, default = quote(numeric(0))),
                                                         numberOfsamplingsOptimisable = new_property(class_double, default = 0.0),
-                                                        samplingsWindows = new_property(class_list, default = quote(list())),
+                                                        samplingsWindows = new_property(class_list, default = list()),
                                                         numberOfTimesByWindows = new_property(class_vector, default = quote(numeric(0))),
                                                         minSampling = new_property(class_vector, default = quote(numeric(0)))),
                                      validator = function( self ) {
