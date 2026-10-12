@@ -13,7 +13,7 @@ Distribution = new_class(
   "Distribution",
   package = "PFIM",
   properties = list(
-    name = new_property(class_character, default = quote(character(0))),
+    name = new_property(class_character, default = character(0)),
     mu = new_property(class_double, default = 0.0),
     omega = new_property(class_double, default = 0.0)
   ),

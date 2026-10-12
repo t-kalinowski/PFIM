@@ -1,6 +1,6 @@
 # PFIM development version
 
-* Register optional FIM property types with S4 and quote empty vector property defaults so PFIM installs and loads with current development S7.
+* Register optional FIM property types with S4 so PFIM installs and loads with current development S7.
 
 # PFIM 8.0
 

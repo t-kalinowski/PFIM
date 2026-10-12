@@ -36,15 +36,15 @@ Fim = new_class( "Fim", package = "PFIM",
                  properties = list(
                    fisherMatrix              = new_property(
                      class_double,
-                     default   = quote(numeric( 0 )),
+                     default   = numeric( 0 ),
                      validator = .fimValidateSquareMatrix
                    ),
-                   fixedEffects              = new_property( class_double,  default = quote(numeric( 0 )) ),
-                   varianceEffects           = new_property( class_double,  default = quote(numeric( 0 )) ),
+                   fixedEffects              = new_property( class_double,  default = numeric( 0 ) ),
+                   varianceEffects           = new_property( class_double,  default = numeric( 0 ) ),
                    SEAndRSE                  = new_property( class_list,    default = list()        ),
                    condNumberFixedEffects    = new_property( class_double,  default = 0.0           ),
                    condNumberVarianceEffects = new_property( class_double,  default = 0.0           ),
-                   shrinkage                 = new_property( class_double,  default = quote(numeric( 0 ))  ),
+                   shrinkage                 = new_property( class_double,  default = numeric( 0 )  ),
                    singularFim               = new_property( class_logical, default = FALSE         )
                  )
 )

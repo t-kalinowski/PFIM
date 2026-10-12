@@ -36,8 +36,8 @@
 Arm = new_class("Arm", package = "PFIM",
 
                 properties = list(
-                  name = new_property(class_character, default = quote(character(0))),
-                  size = new_property(class_double, default = quote(numeric(0))),
+                  name = new_property(class_character, default = character(0)),
+                  size = new_property(class_double, default = numeric(0)),
                   administrations = new_property(class_list, default = list()),
                   initialConditions = new_property(class_list, default = list()),
                   samplingTimes = new_property(class_list, default = list()),
