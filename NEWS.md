@@ -1,6 +1,6 @@
 # PFIM development version
 
-* Register optional FIM property types with S4 so PFIM installs and loads with current development S7.
+* Updates for compatibility with S7 > 0.2.2.
 
 # PFIM 8.0
 
